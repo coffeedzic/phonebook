@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  --bg: #f4f4f4;
+  --color: #3b4d56;
+  --color-light: #4f5f67;
+  --primary: #70c797;
+  --error: #cc0000;
+  --avatar-preview-border: #F8F8F8;
+  --upload-icon-hover-bg: #f1f1f1;
+  --upload-icon-border: #d6d6d6;
+  --disabled: #eeeeee;
+  --message: #ffaa2c;
+  --edit: #47a8f5;
+  height: 100%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: var(--bg);
+  color: var(--color);
+  -webkit-font-smoothing: antialiased;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  height: 2px;
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--avatar-preview-border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  min-height: var(--content-height);
+  max-height: var(--content-height);
+  overflow: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .app {
+    width: 95%;
+  }
+}
+

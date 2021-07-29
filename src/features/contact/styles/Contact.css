@@ -1,0 +1,200 @@
+.no-permission {
+  padding: 20px;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact .picture-edit {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .picture-edit .picture-preview {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid var(--avatar-preview-border);
+  box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 10%);
+}
+
+.contact .picture-edit .picture-preview .image-preview {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.contact .picture-edit .picture-preview .upload-icon {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: white;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 12%);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.contact .picture-edit .picture-preview .image-loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.contact .picture-edit .picture-preview .upload-icon img {
+  width: 50%;
+}
+
+.contact .picture-edit .picture-preview .upload-icon:hover {
+  background: var(--upload-icon-hover-bg);
+  border-color: var(--upload-icon-border);
+}
+
+.contact .picture-edit .picture-upload input {
+  display: none;
+}
+
+.contact .form {
+  margin: 20px 0;
+  width: 60%;
+}
+
+.contact .form .input-field {
+  padding-bottom: 24px;
+  width: 100%;
+}
+
+.contact .form .input-field label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.contact .form .input-field input {
+  width: 100%;
+  font-size: 16px;
+  font-family: inherit;
+  color: inherit;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: var(--bg);
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+}
+
+.contact .form .input-field input:focus {
+  outline-color: var(--primary);
+}
+
+.contact .form .input-field input:disabled {
+  background-color: var(--disabled);
+}
+
+.contact .form button,
+.contact .form .buttons button {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+  border: unset;
+  border-radius: 4px;
+  background-color: var(--primary);
+  color: var(--bg);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.contact .message {
+  width: 100%;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.contact .message .error {
+  color: var(--error);
+}
+
+.contact .form .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact .form .buttons button {
+  width: 48%;
+}
+
+.contact .form .icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .form .icons .icon {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
+  border-radius: 100%;  
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+.contact .form .icons .icon img {
+  width: 50%;
+}
+
+.contact .form .icons .call-icon {
+  background-color: var(--primary);
+}
+
+.contact .form .icons .message-icon {
+  background-color: var(--message);
+}
+
+.contact .form .icons .edit-icon {
+  background-color: var(--edit);
+}
+
+.contact .form .icons .delete-icon {
+  background-color: var(--error);
+}
+
+@media only screen and (max-width: 768px) {
+  .contact .form {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .contact .form .icons .icon {
+    margin: 8px;
+  }
+}

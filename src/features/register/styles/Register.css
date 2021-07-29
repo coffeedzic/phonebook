@@ -1,0 +1,92 @@
+.register {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.register .slogan {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.register .form {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.register .form .input-field {
+  padding-bottom: 24px;
+  width: 100%;
+}
+
+.register .form .input-field label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.register .form .input-field input {
+  width: 100%;
+  font-size: 16px;
+  font-family: inherit;
+  color: inherit;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: var(--bg);
+  box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(60 66 87 / 16%) 0px 0px 0px 1px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px, rgb(0 0 0 / 0%) 0px 0px 0px 0px;
+}
+
+.register .form .input-field input:focus {
+  outline-color: var(--primary);
+}
+
+.register .form .show-password {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.register .form .show-password input {
+  cursor: pointer;
+}
+
+.register .form .show-password label {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.register .form button {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+  border: unset;
+  border-radius: 4px;
+  background-color: var(--primary);
+  color: var(--bg);
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.register .message {
+  width: 100%;
+  padding-top: 16px;
+  text-align: center;
+}
+
+.register .message .error {
+  color: var(--error)
+}

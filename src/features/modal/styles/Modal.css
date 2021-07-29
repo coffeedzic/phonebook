@@ -1,0 +1,74 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.modal .modal-box {
+  position: relative;
+  background-color: var(--bg);
+  width: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 32px auto;  
+  border-radius: 4px;
+  padding: 30px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.modal .modal-box .close-button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  outline: none;
+}
+
+.modal .modal-box .close-button img {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.modal .modal-box .modal-menu {
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.modal .modal-box .modal-menu .switch {
+  height: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal .modal-box .modal-menu .switch span {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.modal .modal-box .modal-menu .switch .dot {
+  margin-top: 3px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+@media only screen and (max-width: 768px) {
+  .modal .modal-box {
+    width: 90%;
+  }
+}
