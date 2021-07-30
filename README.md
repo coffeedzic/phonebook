@@ -10,8 +10,8 @@ Phonebook UI application created with ReactJS, Redux & PHP.
 
 If you don't want to create contact log in with demo account:
 
-Email: test
-Password: test
+- Email: test
+- Password: test
 
 ## Features
 
