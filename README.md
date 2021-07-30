@@ -2,7 +2,7 @@
 
 Phonebook UI application created with ReactJS, Redux & PHP. 
 
-![Phonebook UI preview](https://apps.coffeedzic.com/phonebook/preview.jpg)
+![Phonebook UI preview](https://apps.coffeedzic.com/phonebook/preview.png)
 
 ## Live application
 
