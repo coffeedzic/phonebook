@@ -8,7 +8,7 @@ Phonebook UI application created with ReactJS, Redux & PHP.
 
 [apps.coffeedzic.com/phonebook](https://apps.coffeedzic.com/phonebook)
 
-If you don't want to create a contact, log in with demo account:
+If you don't have time to register, log in with demo account:
 
 - Email: test
 - Password: test
